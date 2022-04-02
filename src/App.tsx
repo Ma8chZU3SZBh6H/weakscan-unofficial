@@ -29,30 +29,30 @@ export default function App() {
           <Line />
           <Step svg={<BookSVG />} path={Routes.book} />
           <Line />
-          <Step svg={<EmailSVG />} path={Routes.book} />
+          <Step svg={<EmailSVG />} path={Routes.email} />
           <Line />
         </div>
       </div>
 
       <div className="grid  items-center justify-center">
         <Switch>
-          <Route path="/" component={Home} />
-          <Route path="/lock">
+          <Route path={Routes.home} component={Home} />
+          <Route path={Routes.lock}>
             <div>lock</div>
           </Route>
-          <Route path="/virus">
+          <Route path={Routes.virus}>
             <div>virus</div>
           </Route>
-          <Route path="/skull">
+          <Route path={Routes.skull}>
             <div>skull</div>
           </Route>
-          <Route path="/skull">
+          <Route path={Routes.home}>
             <div>skull</div>
           </Route>
-          <Route path="/book">
+          <Route path={Routes.book}>
             <div>book</div>
           </Route>
-          <Route path="/email">
+          <Route path={Routes.email}>
             <div>email</div>
           </Route>
         </Switch>
