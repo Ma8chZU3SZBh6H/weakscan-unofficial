@@ -1,15 +1,8 @@
 import { Route, Switch } from 'wouter';
-import Home from './Pages/Home';
 import Line from './Components/Line';
 import Step from './Components/Step';
-import HomeSVG from './Images/Home';
-import LockSVG from './Images/Lock';
-import VirusSVG from './Images/Virus';
-import SkullSVG from './Images/Skull';
-import BookSVG from './Images/Book';
-import EmailSVG from './Images/Email';
 import Nav from './Components/Nav';
-import { Routes } from './Constants/Routes';
+import Routes from './Constants/Routes';
 
 export default function App() {
   return (
@@ -19,42 +12,22 @@ export default function App() {
 
         <div className="grid justify-center items-center xl:grid-rows-sidebar grid-cols-sidebar xl:grid-cols-none gap-2">
           <Line />
-          <Step svg={<HomeSVG />} path={Routes.home} />
-          <Line />
-          <Step svg={<LockSVG />} path={Routes.lock} />
-          <Line />
-          <Step svg={<VirusSVG />} path={Routes.virus} />
-          <Line />
-          <Step svg={<SkullSVG />} path={Routes.skull} />
-          <Line />
-          <Step svg={<BookSVG />} path={Routes.book} />
-          <Line />
-          <Step svg={<EmailSVG />} path={Routes.email} />
-          <Line />
+          {Routes.map((route, index) => (
+            <>
+              <Step key={index + 'a'} svg={route.svg} path={route.path} />
+              <Line key={index + 'b'} />
+            </>
+          ))}
         </div>
       </div>
 
       <div className="grid  items-center justify-center">
         <Switch>
-          <Route path={Routes.home} component={Home} />
-          <Route path={Routes.lock}>
-            <div>lock</div>
-          </Route>
-          <Route path={Routes.virus}>
-            <div>virus</div>
-          </Route>
-          <Route path={Routes.skull}>
-            <div>skull</div>
-          </Route>
-          <Route path={Routes.home}>
-            <div>skull</div>
-          </Route>
-          <Route path={Routes.book}>
-            <div>book</div>
-          </Route>
-          <Route path={Routes.email}>
-            <div>email</div>
-          </Route>
+          {Routes.map((route, index) => (
+            <Route key={index + 'c'} path={route.path}>
+              {route.page}
+            </Route>
+          ))}
         </Switch>
       </div>
     </div>
