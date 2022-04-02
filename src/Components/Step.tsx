@@ -1,12 +1,11 @@
 import { Link, useLocation } from 'wouter';
-import { Routes } from '../Constants/Routes';
 
 export default function Step({
   svg,
   path,
 }: {
   svg: JSX.Element;
-  path: Routes;
+  path: string;
 }) {
   const location = useLocation();
   return (

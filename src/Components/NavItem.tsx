@@ -1,6 +1,5 @@
 import Step from './Step';
 import { Link, useLocation } from 'wouter';
-import { Routes } from '../Constants/Routes';
 
 export default function NavItem({
   svg,
@@ -10,7 +9,7 @@ export default function NavItem({
 }: {
   svg: JSX.Element;
   title: string;
-  path: Routes;
+  path: string;
   onClick: () => void;
 }) {
   const location = useLocation();
