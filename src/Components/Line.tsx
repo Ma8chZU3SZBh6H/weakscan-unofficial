@@ -1,3 +1,5 @@
 export default function Line() {
-  return <div className=" w-1px h-full bg-day-blue mx-auto"></div>;
+  return (
+    <div className=" xl:w-1px xl:h-full w-full h-1px bg-day-blue mx-auto"></div>
+  );
 }

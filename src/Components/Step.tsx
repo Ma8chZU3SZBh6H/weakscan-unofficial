@@ -1,4 +1,4 @@
-import { useLocation } from 'wouter';
+import { Link, useLocation } from 'wouter';
 
 export default function Step({
   svg,
@@ -9,8 +9,12 @@ export default function Step({
 }) {
   const location = useLocation();
   return (
-    <div className={location[0] === path ? 'text-light-blue' : 'text-day-blue'}>
-      {svg}
-    </div>
+    <Link href={path}>
+      <div
+        className={location[0] === path ? 'text-light-blue' : 'text-day-blue'}
+      >
+        {svg}
+      </div>
+    </Link>
   );
 }

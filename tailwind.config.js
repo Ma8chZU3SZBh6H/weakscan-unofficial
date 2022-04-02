@@ -10,13 +10,20 @@ module.exports = {
       },
       gridTemplateColumns: {
         'auto-1fr': 'auto 1fr',
+        '1fr-auto': '1fr auto',
+        sidebar:
+          '1fr auto 1fr auto 1fr auto 1fr auto 1fr auto 1fr auto 1fr auto',
       },
       gridTemplateRows: {
         'auto-1fr': 'auto 1fr',
+        '1fr-auto': '1fr auto',
         sidebar:
           '1fr auto 1fr auto 1fr auto 1fr auto 1fr auto 1fr auto 1fr auto',
       },
       width: {
+        '1px': '1px',
+      },
+      height: {
         '1px': '1px',
       },
       fontSize: {
