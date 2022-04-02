@@ -1,4 +1,8 @@
-import {render} from 'react-dom';
 import './index.scss';
+import { createRoot } from 'react-dom/client';
+import App from './App';
 
-render(<div className='bg-red-500'>test</div>, document.getElementById('root'));
+const root = document.getElementById('root');
+if (root) {
+  createRoot(root).render(<App />);
+}
