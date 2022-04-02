@@ -21,6 +21,7 @@ module.exports = {
       },
       fontSize: {
         '24px': '24px',
+        '64px': '64px',
       },
     },
   },
