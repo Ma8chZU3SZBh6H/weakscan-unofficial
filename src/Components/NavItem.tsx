@@ -1,5 +1,6 @@
 import Step from './Step';
 import { Link, useLocation } from 'wouter';
+import React from 'react';
 
 export default function NavItem({
   svg,
@@ -23,7 +24,7 @@ export default function NavItem({
         <Step svg={svg} path={path} />
       </div>
       <Link onClick={onClick} href={path}>
-        <div className="cursor-pointer">{title}</div>
+        <div className="cursor-pointer ">{title}</div>
       </Link>
     </div>
   );

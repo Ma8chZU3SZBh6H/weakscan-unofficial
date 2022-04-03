@@ -1,4 +1,4 @@
-export default function Email() {
+export default function Email({ className }: { className?: string }) {
   return (
     <svg
       width="50"
@@ -6,6 +6,7 @@ export default function Email() {
       viewBox="0 0 50 50"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <path
         d="M44.9029 8.33348C44.7136 8.31397 44.5228 8.31397 44.3335 8.33348H5.44461C5.19536 8.33732 4.94777 8.37469 4.7085 8.44459L24.7779 28.4307L44.9029 8.33348Z"

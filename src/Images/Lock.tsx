@@ -1,4 +1,4 @@
-export default function Lock() {
+export default function Lock({ className }: { className?: string }) {
   return (
     <svg
       width="43"
@@ -6,6 +6,7 @@ export default function Lock() {
       viewBox="0 0 43 43"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <path
         fillRule="evenodd"

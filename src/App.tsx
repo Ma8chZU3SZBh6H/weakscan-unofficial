@@ -4,6 +4,7 @@ import Step from './Components/Step';
 import Nav from './Components/Nav';
 import Routes from './Routes';
 import Cube from './Pages/Home/Components/Cube';
+import React from 'react';
 
 export default function App() {
   return (
@@ -15,7 +16,12 @@ export default function App() {
           <Line />
           {Routes.map((route, index) => (
             <>
-              <Step key={index + 'a'} svg={route.svg} path={route.path} />
+              <Step
+                key={index + 'a'}
+                svg={route.svg}
+                path={route.path}
+                dynamic={true}
+              />
               <Line key={index + 'b'} />
             </>
           ))}
