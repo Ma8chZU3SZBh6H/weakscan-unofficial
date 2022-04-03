@@ -21,7 +21,7 @@ export default function Step({
         } ${className}`}
       >
         {React.cloneElement(svg, {
-          className: ` ${location[0] === path ? 'w-12' : 'w-6'} ${
+          className: ` ${location[0] === path && dynamic ? 'w-12' : 'w-6'} ${
             dynamic ? 'sm:w-12 ' : ''
           }`,
         })}
