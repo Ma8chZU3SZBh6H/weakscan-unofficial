@@ -4,5 +4,6 @@ export default class Route {
     public path: string,
     public title: string,
     public page: JSX.Element,
+    public props?: any,
   ) {}
 }
