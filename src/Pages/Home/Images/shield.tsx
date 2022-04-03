@@ -1,4 +1,4 @@
-export default function Shield() {
+export default function Shield({ className }: { className?: string }) {
   return (
     <svg
       width="240"
@@ -6,6 +6,7 @@ export default function Shield() {
       viewBox="0 0 240 512"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <path
         fillRule="evenodd"

@@ -14,13 +14,13 @@ export default function Home({ title }: HomeConstants) {
       </div>
     ));
   return (
-    <div className="grid grid-cols-auto-3x gap-5">
-      <div className="text-64px font-medium grid gap-2 grid-rows-4 justify-end items-end">
+    <div className="grid grid-cols-auto-3x gap-5 items-center justify-center">
+      <div className=" md:text-64px text-24px font-medium grid gap-2 grid-rows-4 justify-center  items-center">
         {words}
       </div>
-      <div className="w-[5px] h-full bg-light-blue"></div>
-      <div className="text-day-blue">
-        <Shield />
+      <div className="w-[5px] h-full bg-light-blue  "></div>
+      <div className="text-day-blue  ">
+        <Shield className="h-44 w-20  md:h-auto md:w-auto" />
       </div>
     </div>
   );

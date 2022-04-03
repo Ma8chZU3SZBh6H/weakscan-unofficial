@@ -9,6 +9,7 @@ module.exports = {
         'light-blue': '#0094FF',
       },
       gridTemplateColumns: {
+        auto: 'auto',
         'auto-1fr': 'auto 1fr',
         '1fr-auto': '1fr auto',
         'auto-auto': 'auto auto',
@@ -17,6 +18,7 @@ module.exports = {
           '1fr auto 1fr auto 1fr auto 1fr auto 1fr auto 1fr auto 1fr auto',
       },
       gridTemplateRows: {
+        auto: 'auto',
         'auto-1fr': 'auto 1fr',
         '1fr-auto': '1fr auto',
         sidebar:
