@@ -6,7 +6,7 @@ const autoprefix = require('autoprefixer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  mode: 'development',
+  mode: process.env.mode ?? 'development',
   target: 'web',
   entry: './src/index.tsx',
   resolve: {

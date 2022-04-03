@@ -40,7 +40,7 @@ export default function App() {
         </div>
       </div>
 
-      <div className="grid relative  items-center justify-center ">
+      <div className="grid relative grid-rows-1 items-center justify-center ">
         <div className="relative z-30">
           <Switch>
             {Routes.map((route, index) => (
