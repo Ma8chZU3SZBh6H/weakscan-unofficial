@@ -17,12 +17,12 @@ export default function App() {
           {Routes.map((route, index) => (
             <>
               <Step
-                key={index + 'a'}
+                key={index + 'a22'}
                 svg={route.svg}
                 path={route.path}
                 dynamic={true}
               />
-              <Line key={index + 'b'} />
+              <Line key={index + 'b33'} />
             </>
           ))}
         </div>
@@ -32,7 +32,7 @@ export default function App() {
         <div className="relative z-30">
           <Switch>
             {Routes.map((route, index) => (
-              <Route key={index + 'c'} path={route.path}>
+              <Route key={index + 'ct'} path={route.path}>
                 {route.page}
               </Route>
             ))}

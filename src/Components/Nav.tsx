@@ -24,7 +24,7 @@ export default function Nav() {
         <div className="grid gap-4">
           {Routes.map((route, index) => (
             <NavItem
-              key={index}
+              key={index + 'y'}
               onClick={() => setOpen(!open)}
               svg={route.svg}
               title={route.title}

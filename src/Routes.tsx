@@ -13,7 +13,7 @@ routes.push(
   new Route(<HomeSVG />, '/', 'Home', <Home {...new HomeConstants()} />),
 );
 
-products.forEach((product) => {
+products.forEach((product, index) => {
   {
     {
       routes.push(
@@ -21,7 +21,7 @@ products.forEach((product) => {
           product.svg,
           product.path,
           product.routeTitle,
-          <Product {...product} />,
+          <Product key={index + 'rrr'} {...product} />,
         ),
       );
     }
