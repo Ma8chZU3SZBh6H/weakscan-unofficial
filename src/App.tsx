@@ -5,6 +5,7 @@ import Nav from './Components/Nav';
 import Routes from './Routes';
 import Cube from './Pages/Home/Components/Cube';
 import React from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export default function App() {
   return (
@@ -33,7 +34,17 @@ export default function App() {
           <Switch>
             {Routes.map((route, index) => (
               <Route key={index + 'ct'} path={route.path}>
-                {route.page}
+                <AnimatePresence exitBeforeEnter={true}>
+                  <motion.div
+                    key={route.path}
+                    transition={{ duration: 1 }}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                  >
+                    {route.page}
+                  </motion.div>
+                </AnimatePresence>
               </Route>
             ))}
           </Switch>

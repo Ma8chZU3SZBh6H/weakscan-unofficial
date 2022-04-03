@@ -17,9 +17,9 @@ export default function Nav() {
         </button>
       </div>
       <div
-        className={`top-0 left-0 absolute ${
-          open ? 'visible' : 'hidden'
-        } min-h-screen w-full bg-night-blue z-40 grid items-center justify-center xl:hidden `}
+        className={`top-0 left-0 absolute  min-h-screen w-full transition duration-500 ${
+          open ? 'opacity-100 ' : 'opacity-0 pointer-events-none'
+        } z-40 bg-night-blue grid items-center justify-center xl:hidden `}
       >
         <div className="grid gap-4">
           {Routes.map((route, index) => (
