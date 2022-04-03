@@ -24,7 +24,13 @@ export default function Input({
         type={type}
         {...onChange(name)}
       />
-      <div>{errors[name]?.message}</div>
+      <div
+        className={`transform transition duration-500 ${
+          errors[name] ? 'scale-y-100' : 'scale-y-0'
+        }`}
+      >
+        {errors[name]?.message}
+      </div>
       <div className="w-full h-1 bg-day-blue"></div>
     </InputGroup>
   );
