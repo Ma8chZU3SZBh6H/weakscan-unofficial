@@ -28,7 +28,7 @@ export default function App() {
         </div>
       </div>
 
-      <div className="grid relative z-30 items-center justify-center overflow-hidden">
+      <div className="grid relative z-30 items-center justify-center ">
         <Switch>
           {Routes.map((route, index) => (
             <Route key={index + 'c'} path={route.path}>
@@ -36,10 +36,9 @@ export default function App() {
             </Route>
           ))}
         </Switch>
+        <Cube className="w-[50vh] h-[50vh] animate-cube-spin" />
+        <Cube className="w-[60vh] h-[60vh] animate-cube-spin2" />
       </div>
-
-      <Cube className="w-[50vh] h-[50vh] animate-cube-spin" />
-      <Cube className="w-[60vh] h-[60vh] animate-cube-spin2" />
     </div>
   );
 }
