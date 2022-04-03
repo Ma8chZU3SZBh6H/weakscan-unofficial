@@ -17,6 +17,7 @@ export default function Home({ title }: HomeConstants) {
     <div className="grid grid-cols-auto-3x gap-5 items-center justify-center">
       <div className=" md:text-64px text-24px font-medium grid gap-2 grid-rows-4 justify-center  items-center">
         {words}
+        <span className="text-24px ml-auto">unofficial</span>
       </div>
       <div className="w-[5px] h-full bg-light-blue  "></div>
       <div className="text-day-blue  ">

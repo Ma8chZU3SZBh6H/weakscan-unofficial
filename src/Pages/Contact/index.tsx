@@ -26,7 +26,7 @@ export default function Contact() {
       >
         <div>
           <h1 className="text-center text-48px md:text-64px">Contact us.</h1>
-          <h2 className="text-center">example@page.com</h2>
+          <h2 className="text-center">unofficial</h2>
         </div>
         <div className="flex gap-10 md:flex-row flex-col">
           <Input

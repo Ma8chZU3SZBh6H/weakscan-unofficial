@@ -10,6 +10,7 @@ export default function Nav() {
       <div>
         WEAK
         <span className="bg-light-blue text-night-blue px-1 mx-1">SCAN</span>
+        <span className="text-12px">unofficial</span>
       </div>
       <div className="xl:hidden text-day-blue hover:text-light-blue relative z-50">
         <button onClick={() => setOpen(!open)}>
