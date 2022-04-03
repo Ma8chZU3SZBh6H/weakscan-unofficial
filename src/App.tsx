@@ -8,7 +8,7 @@ import React from 'react';
 
 export default function App() {
   return (
-    <div className="bg-night-blue  min-h-screen text-sky-blue  grid grid-rows-auto-1fr xl:grid-cols-auto-1fr xl:grid-rows-1 p-10 gap-10">
+    <div className="bg-night-blue  min-h-screen text-sky-blue  grid grid-rows-auto-1fr xl:grid-cols-auto-1fr xl:grid-rows-1 p-10 gap-10 overflow-hidden">
       <div className="grid grid-rows-auto-1fr gap-10 ">
         <Nav />
 
