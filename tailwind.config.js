@@ -32,6 +32,7 @@ module.exports = {
       },
       fontSize: {
         '24px': '24px',
+        '48px': '48px',
         '64px': '64px',
       },
       keyframes: {
