@@ -2,6 +2,7 @@ import { Product } from './product.types';
 import Lock from '../../Images/Lock';
 import Virus from '../../Images/Virus';
 import Skull from '../../Images/Skull';
+import Book from '../../Images/Book';
 
 const products: Product[] = [];
 products.push(
@@ -37,6 +38,17 @@ products.push(
     <Skull />,
     '/pen',
     'PenTest',
+  ),
+);
+
+products.push(
+  new Product(
+    'Computer Lessons',
+    'Computer Lessons for those who are inexperienced with computers, or those who are looking to expand their knowledge with computers.',
+    '50$',
+    <Book />,
+    '/lessons',
+    'Lessons',
   ),
 );
 

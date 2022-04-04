@@ -1,11 +1,11 @@
-import Lock from '../../Images/Lock';
 import { Product as PRODUCT } from './product.types';
 import { Link } from 'wouter';
+import React from 'react';
 
-export default function Product({ price, title, description, path }: PRODUCT) {
+export default function Product({ price, title, description, svg }: PRODUCT) {
   return (
     <div className="flex flex-col items-center justify-center gap-5 text-center font-medium">
-      <Lock className="text-day-blue w-28 h-28" />
+      {React.cloneElement(svg, { className: 'text-day-blue w-28 h-28' })}
       <h1 className="md:text-64px text-48px">{title} </h1>
       <p className="max-w-[497px]">{description}</p>
       <Link
